@@ -87,6 +87,95 @@ class _UIState extends State<UI> {
             )
           ],
         ),
+        drawer: Drawer(
+          elevation: 16,
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                width: 310,
+                color: Colors.teal[200],
+                child: Padding(
+                  padding: const EdgeInsets.all(38.0),
+                  child: Icon(Icons.account_box_outlined, size: 70,)
+
+                ),
+              ),
+              Divider(
+                height: 3,
+                thickness: 2,
+                color: Colors.teal,
+              ),
+              ListTile(
+                title: Text("Products"),
+                hoverColor: Colors.teal,
+                tileColor: Colors.teal[100],
+                leading: Icon(Icons.sixteen_mp, color: Colors.black),
+              ),
+              Divider(
+                height: 3,
+                thickness: 1,
+                color: Colors.teal,
+              ),
+              ListTile(
+                title: Text("Account"),
+                hoverColor: Colors.teal,
+                tileColor: Colors.teal[100],
+                leading: Icon(
+                  Icons.account_box_outlined,
+                  color: Colors.black87,
+                ),
+              ),
+              Divider(
+                height: 3,
+                thickness: 1,
+                color: Colors.teal,
+              ),
+              ListTile(
+                title: Text("Carts"),
+                hoverColor: Colors.teal,
+                tileColor: Colors.teal[100],
+                leading: Icon(
+                  Icons.shopping_cart,
+                  color: Colors.black,
+                ),
+              ),
+              Divider(
+                height: 3,
+                thickness: 1,
+                color: Colors.teal,
+              ),
+              ListTile(
+                title: Text("Settings"),
+                hoverColor: Colors.teal,
+                tileColor: Colors.teal[100],
+                leading: Icon(
+                  Icons.settings,
+                  color: Colors.black87,
+                ),
+              ),
+              Divider(
+                height: 3,
+                thickness: 1,
+                color: Colors.teal,
+              ),
+              ListTile(
+                title: Text("Log Out"),
+                hoverColor: Colors.teal,
+                tileColor: Colors.teal[100],
+                leading: Icon(
+                  Icons.logout,
+                  color: Colors.black,
+                ),
+              ),
+              Divider(
+                height: 3,
+                thickness: 1,
+                color: Colors.teal,
+              ),
+            ],
+          ),
+        ),
         backgroundColor: Colors.white,
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.teal,
